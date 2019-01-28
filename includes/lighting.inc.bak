@@ -1,0 +1,60 @@
+//light sources on the setup (not physical values)
+
+
+#declare LS_base = 
+    light_source 
+    { 
+        <0, 0, -5> color White
+        spotlight
+        point_at <0,0,0>
+    }
+      
+#declare LS_Right = 
+    light_source 
+    { 
+        <1.25, 0, -4> color White
+        spotlight
+        point_at <1.25,0,0>
+        translate<0.2-(0.2*clock),0,0>
+    }
+    
+#declare LS_Left = 
+    light_source 
+    { 
+        <-1.25, 0, -4> color White
+        spotlight
+        point_at <-1.25,0,0>
+        translate<-0.2+(0.2*clock),0,0>
+    }
+    
+#declare LS_Top = 
+    light_source 
+    { 
+        <0, 1.25, -4> color White
+        spotlight
+        point_at <0, 1.25, 0>
+        translate<0, 0.2*clock, 0>
+    }
+    
+#declare LS_Bottom = 
+    light_source 
+    { 
+        <0, -1.75, -(flaps_height + 0.5)> color White
+        area_light <0.5,0,0>,<0,0,0.5>,5,5
+        adaptive 1
+        jitter
+        //point_at <0, -1.25, 0>
+        translate<0, 0.5*clock, 0>
+    }
+
+//global_settings { ambient_light 8 }
+  /*
+
+light_source { <30, 0, 30> color White}
+light_source { <30, 0, -30> color White}
+light_source { <-30,0, 30> color White}
+light_source { <-30, 0, -30> color White}
+light_source { <0, -30, 0> color White}
+light_source { <0, 30, 0> color White}
+light_source { <0, -30, 0> color White}
+     */
