@@ -8,9 +8,9 @@ input_files_path = "C:\\povray\\Numerical_Signature\\input_images\\"
 output_files_path = "C:\\povray\\Numerical_Signature\\output_images\\"
 angles_file_path = output_files_path + "angles.out"
 
-ini_file_path = pov_file_path + "test_ini_file.ini"
+ini_file_path = pov_file_path + "image_generator.ini"
 
-flap_setups = ["system_1DM_FlapLeft.pov"]#,"system_1DM_FlapTop.pov","system_1DM_FlapRight.pov","system_1DM_FlapBottom.pov","system_1DM_NoFlap.pov"]
+flap_setups = ["system_1DM_FlapLeft.pov","system_1DM_FlapTop.pov","system_1DM_FlapRight.pov","system_1DM_FlapBottom.pov","system_1DM_NoFlap.pov"]
 
 
 
